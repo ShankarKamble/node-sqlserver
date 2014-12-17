@@ -14,6 +14,7 @@ console.log( "You are downloading Microsoft Driver for Node.js for SQL Server fr
 var msiVer = process.version.split(".").slice(0,2).join(".");
 var msiArch = process.arch;
 var msiArchVar = process.arch.split(".");
+console.log(msiArchVar);
 if(msiArchVar.length>1 && parseInt(msiArchVar[1]>8)){
 	msiArch = msiArchVar[0]+".8"
 }
